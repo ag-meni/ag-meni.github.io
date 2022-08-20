@@ -45,6 +45,7 @@ tr:nth-child(odd) {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
+.fig-margin {margin: 1rem;}
 .fig-margin figure {
     margin: 5px;
 }
