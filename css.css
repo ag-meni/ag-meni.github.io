@@ -7,10 +7,10 @@ html, body {
 img {
     width: 100%;
     height: auto;
+    max-width: 200px;
 }
 
 #ag {
-    max-width: 200px;
     margin-top: 3rem;
 }
 header {
@@ -59,8 +59,8 @@ footer {
 }
 
 /* animacije*/
- figure {transition: all 0.3s;}
+ figure {transition: all 1s;}
 
 .pop {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
