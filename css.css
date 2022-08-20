@@ -1,0 +1,66 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto Slab', serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+#ag {
+    max-width: 200px;
+    margin-top: 3rem;
+}
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    background-color: black;
+    padding: 1rem 5px;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+}
+main {
+    padding: 3rem 5px;
+    text-align: center;
+    background-image: url("./pictures/bgd.png");
+}
+
+table {
+    width: 100%;
+}
+tr:nth-child(odd) {
+    background-color: rgba(223, 223, 223, 0.683);
+}
+
+
+.img-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.fig-margin figure {
+    margin: 5px;
+}
+
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin: 0px;
+    padding: 2rem;
+}
+
+/* animacije*/
+ figure {transition: all 0.3s;}
+
+.pop {
+    transform: scale(1.1);
+}
