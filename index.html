@@ -11,212 +11,554 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet"> 
     <title>AG Meni</title>
 </head>
-<body>
+<body> <!-- <header>
+    <span onclick="skrollaj('bezalkoholno')">Bezalkoholno</span>
+    <span onclick="skrollaj('alkoholno')">Alkoholno</span>
+    <span onclick="skrollaj('jela')">Jela</span>
+    </header> -->
+
     <header>
-        <span onclick="skrollaj('bezalkoholno')">Bezalkoholno</span>
-        <span onclick="skrollaj('alkoholno')">Alkoholno</span>
-        <span onclick="skrollaj('jela')">Jela</span>
+        <div class="dropbtn">
+            <span>Pića</span>
+            <div class="dropmeni">
+                <span onclick="skrollaj('bezalkoholno')">Bezalkoholna</span>
+                <span onclick="skrollaj('vina')">Vina</span>
+                <span onclick="skrollaj('flasirano')">Flaširano Pivo</span>
+                <span onclick="skrollaj('toceno')">Točeno Pivo</span>
+            </div>
+        </div>
+        <div class="dropbtn">
+            <span>Hrana</span>
+            <div class="dropmeni">
+                <span onclick="skrollaj('pizze')">Pizze</span>
+                <span onclick="skrollaj('burgeri')">Burgeri</span>
+                <span onclick="skrollaj('sendvići')">Sendvići</span>
+                <span onclick="skrollaj('pržena')">Pržena jela</span>
+                <span onclick="skrollaj('plate')">Plate i Meze</span>
+                <span onclick="skrollaj('palačinke')">Palaćinke</span>
+            </div>
+        </div>
     </header>
+  
     <main>
         <img src="./pictures/ag-logo.jpg" alt="" id="ag">
         <h1 id="bezalkoholno">Pića</h1>
 
         <h2>Bezalkoholna Pića</h2>
-        <table>
-            <tr>
-                <td>Coca cola</td>
-                <td>250ml</td>
-                <td>3km</td>
-            </tr>
-            <tr>
-                <td>Fanta</td>
-                <td>250ml</td>
-                <td>3km</td>
-            </tr>
-            <tr>
-                <td>Sprite</td>
-                <td>250ml</td>
-                <td>3km</td>
-            </tr>
+        <table class="left">
             <tr>
                 <td>Kafa</td>
-                <td>20ml</td>
-                <td>2km</td>
+                <td>2 KM</td>
+                <td></td>
             </tr>
             <tr>
-                <td>Vočni sok</td>
-                <td>200ml</td>
-                <td>4km</td>
+                <td>Nescafe</td>
+                <td>2 KM</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Nes vanilla</td>
+                <td>2.50 KM</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Nes cappucino</td>
+                <td>2.50 KM</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Topla čokolada</td>
+                <td>3 KM</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>Čaj</td>
+                <td>2 KM</td>
+                <td></td>
             </tr>
         </table>
-
-
-
-
-    <!-- <section class="text-grid">
-            <span>kola</span>
-            <span>250ml</span>
-            <span>2km</span>
-            <span>caj</span>
-            <span>200ml</span>
-            <span>2km</span>
-            
-            <span>kafa</span>
-            <span>solja</span>
-            <span>1km</span>
-            
-            <span>ulje čaukovca</span>
-            <span>1ml</span>
-            <span>10km</span>
-            
-            <span>znoj zmaja od Bosne</span>
-            <span>2ml</span>
-            <span>69km</span>
-            
-            <span>p</span>
-            <span>p</span>
-            <span>p</span>
-            
-            <span>p</span>
-            <span>p</span>
-            <span>p</span>
-            
-            <span>p</span>
-            <span>p</span>
-            <span>p</span>
-            
-            <span>p</span>
-            <span>p</span>
-            <span>p</span>
-            
-            <span>p</span>
-            <span>p</span>
-            <span>p</span>
-        </section> -->
+        <br>
+        <table class="left">
+            <tr>
+                <td>Mineralna voda</td>
+                <td>2 KM</td>
+                <td>200ml</td>
+            </tr>
+            <tr>
+                <td>Negazirani sok</td>
+                <td>3 KM</td>
+                <td>200ml</td>
+            </tr>
+            <tr>
+                <td>Gazirani sok</td>
+                <td>3 KM</td>
+                <td>200ml</td>
+            </tr>
+            <tr>
+                <td>Coca Cola</td>
+                <td>3 KM</td>
+                <td>250ml</td>
+            </tr>
+            <tr>
+                <td>Cockta</td>
+                <td>3KM</td>
+                <td>250ml</td>
+            </tr>
+            <tr>
+                <td>Orangina</td>
+                <td>3 KM</td>
+                <td>250ml</td>
+            </tr>
+            <tr>
+                <td>Ledeni čaj</td>
+                <td>3 KM</td>
+                <td>250ml</td>
+            </tr>
+            <tr>
+                <td>Red Bull</td>
+                <td>4 KM</td>
+                <td>250ml</td>
+            </tr>
+            <tr>
+                <td>Limunada prirodna</td>
+                <td>2.50 KM</td>
+                <td>200ml</td>
+            </tr>
+            <tr>
+                <td>Cedevita</td>
+                <td>2 KM</td>
+                <td>300ml</td>
+            </tr>
+            <tr>
+                <td>Sensation</td>
+                <td>2 KM</td>
+                <td>200ml</td>
+            </tr>
+        </table>
         
-        <h2 id="alkoholno">Alkoholna Pića</h2>
+        <h2 id="vina">Alkoholna Pića</h2>
         <h3>Ne točimo alkohol osobama mlađim od 18 godina</h3>
-
-        <table>
+        <h2>Vina</h2>
+        <table class="left">
             <tr>
-                <td>Staropramen</td>
-                <td>330ml/500ml</td>
-                <td>3.5km/5km</td>
+                <td>Crno Stono vino (domaće)</td>
+                <td>15 KM</td>
+                <td>1l</td>
             </tr>
             <tr>
-                <td>Piva</td>
-                <td>250ml</td>
-                <td>3km</td>
+                <td>Bijelo Stono vino(domaće)</td>
+                <td>15 KM</td>
+                <td>1l</td>
             </tr>
             <tr>
-                <td>sfprite</td>
-                <td>250ml</td>
-                <td>3km</td>
+                <td>Bijelo Vino</td>
+                <td>25 KM</td>
+                <td>700ml</td>
             </tr>
             <tr>
-                <td>rghsda</td>
-                <td>20ml</td>
-                <td>2km</td>
+                <td>Crno Vino</td>
+                <td>25 KM</td>
+                <td>700ml</td>
             </tr>
             <tr>
-                <td>Vočni sok</td>
+                <td>Crno vino</td>
+                <td>5 KM</td>
                 <td>200ml</td>
-                <td>4km</td>
+            </tr>
+            <tr>
+                <td>Bijelo vino</td>
+                <td>5KM</td>
+                <td>200ml</td>
             </tr>
         </table>
 
-        <!-- <section class="text-grid">
-            <span>piva</span>
-            <span>250ml</span>
-            <span>2km</span>
-            <span>piva2</span>
-            <span>200ml</span>
-            <span>2km</span>
-            
-            <span>piva3</span>
-            <span>solja</span>
-            <span>1km</span>
-            
-            <span>ulje čaukovca</span>
-            <span>1ml</span>
-            <span>10km</span>
-            
-            <span>znoj zmaja od Bosne</span>
-            <span>2ml</span>
-            <span>69km</span>
-            
-            <span>piva</span>
-            <span>p</span>
-            <span>p</span>
-            
-            <span>psfa</span>
-            <span>p</span>
-            <span>p</span>
-            
-            <span>psdf</span>
-            <span>p</span>
-            <span>p</span>
-            
-            <span>psdg</span>
-            <span>p</span>
-            <span>p</span>
-        </section> -->
-
-        <h2>Kraft Piva</h2>
+        <h2 id="flasirano">Pivo Boca 330ml</h2>
         <section class="img-grid">
             <figure class="selektor"> 
-                <img src="./pictures/jalijas.png" alt="">
-                <figcaption>jalijaš<br>5km</figcaption>
+                <img src="./pictures/84.png" alt="">
+                <figcaption>84<br>4.50 KM</figcaption>
             </figure>
             <figure class="selektor"> 
                 <img src="./pictures/crnjak.png" alt="">
-                <figcaption>Crnjak<br>5km</figcaption>
+                <figcaption>Crnjak<br>4.50 KM</figcaption>
             </figure>
             <figure class="selektor"> 
-                <img src="./pictures/legenda.png" alt="">
-                <figcaption>Legenda <br> 5km</figcaption>
+                <img src="./pictures/klošar.png" alt="">
+                <figcaption>Klošar <br> 4.50 KM</figcaption>
+            </figure>
+            <figure class="selektor"> 
+                <img src="./pictures/štreber.png" alt="">
+                <figcaption>Štreber<br>4.50 KM</figcaption>
+            </figure>
+            <figure class="selektor"> 
+                <img src="./pictures/rocker.png" alt="">
+                <figcaption>Rocker<br> 4.50 KM</figcaption>
             </figure>
             <figure class="selektor"> 
                 <img src="./pictures/jalijas.png" alt="">
-                <figcaption>jalijaš<br>5km</figcaption>
-            </figure>
-            <figure class="selektor"> 
-                <img src="./pictures/crnjak.png" alt="">
-                <figcaption>Crnjak<br>5km</figcaption>
-            </figure>
-            <figure class="selektor"> 
-                <img src="./pictures/legenda.png" alt="">
-                <figcaption>Legenda <br> 5km</figcaption>
+                <figcaption>Jalijaš<br>4.50 KM</figcaption>
             </figure>
         </section>
-        <br id="jela">
+
+        <h2 id="toceno">Točeno Pivo</h2>
+        <table class="left">
+            <tr>
+                <td>Crno Stono vino (domaće)</td>
+                <td>15 KM</td>
+                <td>1l</td>
+            </tr>
+            <tr>
+                <td>Bijelo Stono vino(domaće)</td>
+                <td>15 KM</td>
+                <td>1l</td>
+            </tr>
+            <tr>
+                <td>Bijelo Vino</td>
+                <td>25 KM</td>
+                <td>700ml</td>
+            </tr>
+            <tr>
+                <td>Crno Vino</td>
+                <td>25 KM</td>
+                <td>700ml</td>
+            </tr>
+            <tr>
+                <td>Crno vino</td>
+                <td>5 KM</td>
+                <td>200ml</td>
+            </tr>
+            <tr>
+                <td>Bijelo vino</td>
+                <td>5KM</td>
+                <td>200ml</td>
+            </tr>
+        </table>
+
+        <br id="pizze">
         <br>
+
         <h1>Jela</h1>
+        <h3>Tap za više informacija</h3>
+        <h2>Pizze i jela iz krušne peći</h2>
+
         <section class="img-grid fig-margin">
             <figure class="selektor"> 
-                <img src="./pictures/pizza.png" alt="">
-                <figcaption>pizza<br> 12km</figcaption>
+                <div>
+                    <img src="./pictures/meza.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>Pizza kriška<br>1.50 km</figcaption>
             </figure>
             <figure class="selektor"> 
-                <img src="./pictures/sendvic.png" alt="">
-                <figcaption>sendvic<br>1.5km</figcaption>
+                <div>
+                    <img src="./pictures/meza.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>Margarita<br>4km</figcaption>
             </figure>
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/meza.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>Capricciosa<br>4km</figcaption>
+            </figure>
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/meza.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>Vegeteriana<br>4km</figcaption>
+            </figure>
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/meza.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>Tono<br>4km</figcaption>
+            </figure>
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/meza.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>Peperoni<br>4km</figcaption>
+            </figure>
+
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/meza.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>Fruti Di Mare<br>4km</figcaption>
+            </figure>
+
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/meza.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>AG<br>4km</figcaption>
+            </figure>
+
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/meza.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>Nuttela<br>4km</figcaption>
+            </figure>
+
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/meza.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>Pileća maslenica<br>4km</figcaption>
+            </figure>
+
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/meza.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>Pileća foccacia<br>4km</figcaption>
+            </figure>
+        </section>
+
+
+        <h2 id="burgeri">Burgeri</h2>
+        <section class="img-grid fig-margin">
+
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/sendvic.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>Mono<br>8 KM</figcaption>
+            </figure>
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/sendvic.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>Stereo<br>11 KM</figcaption>
+            </figure>
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/sendvic.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>Biker<br> 8.50 KM</figcaption>
+            </figure>
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/sendvic.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>Fat Boy<br>12 KM</figcaption>
+            </figure>
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/sendvic.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>Chickenburger<br>7 KM</figcaption>
+            </figure>
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/sendvic.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>Chicken-filet<br>7 KM</figcaption>
+            </figure>
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/sendvic.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>Vegeburger<br>8 KM</figcaption>
+            </figure>
+        </section>
+
+
+        <h2 id="sendvići">Sendvići</h2>
+        <section class="img-grid fig-margin">
+
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/sendvic.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>Pileći<br>5 KM</figcaption>
+            </figure>
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/sendvic.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>Tuna<br>5 KM</figcaption>
+            </figure>
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/sendvic.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>Kobasice-jaja<br>5 KM</figcaption>
+            </figure>
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/sendvic.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>Topli sir-šunka<br>4 KM</figcaption>
+            </figure>
+        </section>
+
+        <h2 id="pržena">Pržena jela</h2>
+        <section class="img-grid fig-margin">
+
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/sendvic.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>Paste<br>6 KM</figcaption>
+            </figure>
+
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/sendvic.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>Rižota<br>6 KM</figcaption>
+            </figure>
+
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/sendvic.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>Pileća salata<br>6 KM</figcaption>
+            </figure>
+
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/sendvic.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>Pileća krilca<br>7 KM</figcaption>
+            </figure>
+
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/sendvic.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>Engleski doručak<br>5 KM</figcaption>
+            </figure>
+
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/sendvic.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>Omleti<br>5 KM</figcaption>
+            </figure>
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/meza.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>Uštipci<br>5 KM</figcaption>
+            </figure>
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/meza.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption><br>5 KM</figcaption>
+            </figure>
+        </section>
+
+        <h2 id="plate">Plate i Meze</h2>
+        <section class="img-grid fig-margin">
+
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/meza.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>Pileća krilca<br>7 KM</figcaption>
+            </figure>
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/meza.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>Nachos sa sirom<br>5 KM</figcaption>
+            </figure>
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/meza.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>Krompirići<br>3 KM</figcaption>
+            </figure>
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/meza.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>Nachos solo<br>4 KM</figcaption>
+            </figure>
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/meza.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>Pivska plata<br>8 KM</figcaption>
+            </figure>
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/meza.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>Girice<br>7 KM</figcaption>
+            </figure>
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/meza.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption> Mediteran plata <br>15 KM</figcaption>
+            </figure>
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/meza.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>Sirna plata<br>15 KM</figcaption>
+            </figure>
+            <figure class="selektor"> 
+                <div>
+                    <img src="./pictures/meza.png" alt="">
+                    <div class="info"><span>nesto pise abla bla blaaaaa bla bla baraaad bla</span></div>
+                </div>
+                <figcaption>Kontinental plata<br>15 KM</figcaption>
+            </figure>
+        </section>
+
+        <h2 id="palačinke">Palačinke</h2>
+        <section class="img-grid fig-margin">
             <figure class="selektor"> 
                 <img src="./pictures/meza.png" alt="">
-                <figcaption>Meza<br>4km</figcaption>
             </figure>
-            <figure class="selektor"> 
-                <img src="./pictures/pizza.png" alt="">
-                <figcaption>pizza<br> 12km</figcaption>
-            </figure>
-            <figure class="selektor"> 
-                <img src="./pictures/sendvic.png" alt="">
-                <figcaption>sendvic<br>1.5km</figcaption>
-            </figure>
-            <figure class="selektor"> 
-                <img src="./pictures/meza.png" alt="">
-                <figcaption>Meza<br>4km</figcaption>
-            </figure>
+
+            <div>
+                <span>Nutella ili Džem <br> 2KM</span>
+            </div>
         </section>
     </main>
 
