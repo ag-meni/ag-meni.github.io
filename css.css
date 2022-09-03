@@ -101,7 +101,7 @@ footer {
     transition: all 0.3s ease-out;
     opacity: 0;
     z-index: 19;
-    transform: translateY(-200px);
+    transform: translateY(-400px);
 }
 
 .dropmeni >* {
