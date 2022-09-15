@@ -3,6 +3,9 @@ html, body {
     padding: 0px;
     font-family: 'Roboto Slab', serif;
     background-color: white;
+}
+
+.bgd {
 
     background-image: url("./pictures/bgd.png");
 }
@@ -29,11 +32,16 @@ header {
     left: 0px;
     z-index: 100;
 }
-main {
+main{
     padding: 3rem 10px;
     text-align: center;
     max-width: 500px;
     margin: auto;
+}
+.black-bgd {
+    background-color: black;
+    margin: 0px;
+    color: white;
 }
 
 table {
@@ -73,11 +81,11 @@ tr:nth-child(odd) {
    
     transition: all 0.5s;
 }
-
+/*
 .info:hover {
     opacity: 0.8;
 }
-
+*/
 
 footer {
     text-align: center;
@@ -101,10 +109,10 @@ footer {
     flex-direction: column;
     flex-wrap: nowrap;
     background-color: black;
-    transition: all 0.3s ease-out;
+    transition: all 0.4s ease-out;
     opacity: 0;
     z-index: 19;
-    transform: translateY(-400px);
+    transform: translateY(-800px);
 }
 
 .dropmeni >* {
